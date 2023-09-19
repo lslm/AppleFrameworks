@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     @Environment(\.dismiss) var dismiss
-    
+    @State private var isShowingSafariView = false
     let framework: Framework
     
     var body: some View {
@@ -55,10 +55,14 @@ struct FrameworkDetailView: View {
                             .frame(maxHeight: 80)
                             
                         Button {
-                            print("Teste")
+                            isShowingSafariView = true
                         } label: {
                             PrimaryButtonView(text: "Learn More")
                         }
+                    }
+                    .fullScreenCover(isPresented: $isShowingSafariView) {
+                        SafariView(url: URL(string: framework.urlString)!)
+                            .ignoresSafeArea()
                     }
                 }
             }
