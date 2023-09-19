@@ -10,16 +10,10 @@ import SwiftUI
 struct FrameworksGridView: View {
     @StateObject var viewModel = FrameworkGridViewModel()
     
-    private var threeColumnGrid = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
-    
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: threeColumnGrid, spacing: 30) {
+                LazyVGrid(columns: viewModel.gridColumns, spacing: 30) {
                     ForEach(MockData.frameworks) { framework in
                         FrameworkGridItem(framework)
                             .onTapGesture {

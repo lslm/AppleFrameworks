@@ -5,7 +5,7 @@
 //  Created by Lucas Santos on 18/09/23.
 //
 
-import Foundation
+import SwiftUI
 
 final class FrameworkGridViewModel: ObservableObject {
     var selectedFramework: Framework? {
@@ -13,6 +13,12 @@ final class FrameworkGridViewModel: ObservableObject {
             isShowingDetailView = true
         }
     }
+    
+    let gridColumns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
     
     @Published var isShowingDetailView = false
 }

@@ -106,16 +106,13 @@
 		762FEAC32AB660F7004B1D64 /* AppleFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				765A14462AB946270035DEF1 /* UIKit Components */,
+				765A14452AB945FB0035DEF1 /* Models */,
+				765A14422AB945B50035DEF1 /* Screens */,
 				765A14392AB927090035DEF1 /* Components */,
 				762FEAC42AB660F7004B1D64 /* AppleFrameworksApp.swift */,
-				765A14372AB91F560035DEF1 /* FrameworkDetailView.swift */,
-				762FEAF22AB663DC004B1D64 /* FrameworksGridView.swift */,
-				765A143E2AB92C1B0035DEF1 /* FrameworkGridViewModel.swift */,
-				762FEAEE2AB66248004B1D64 /* Framework.swift */,
-				767C665C2AB664A7003BF9F2 /* FrameworkGridItem.swift */,
 				762FEAC82AB660F9004B1D64 /* Assets.xcassets */,
 				762FEACA2AB660F9004B1D64 /* Preview Content */,
-				765A14402AB93D230035DEF1 /* SafariView.swift */,
 			);
 			path = AppleFrameworks;
 			sourceTree = "<group>";
@@ -151,6 +148,49 @@
 				765A143C2AB927300035DEF1 /* PrimaryButtonView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		765A14422AB945B50035DEF1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				765A14442AB945DE0035DEF1 /* FrameworkDetailView */,
+				765A14432AB945BE0035DEF1 /* FrameworkGridView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		765A14432AB945BE0035DEF1 /* FrameworkGridView */ = {
+			isa = PBXGroup;
+			children = (
+				767C665C2AB664A7003BF9F2 /* FrameworkGridItem.swift */,
+				762FEAF22AB663DC004B1D64 /* FrameworksGridView.swift */,
+				765A143E2AB92C1B0035DEF1 /* FrameworkGridViewModel.swift */,
+			);
+			path = FrameworkGridView;
+			sourceTree = "<group>";
+		};
+		765A14442AB945DE0035DEF1 /* FrameworkDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				765A14372AB91F560035DEF1 /* FrameworkDetailView.swift */,
+			);
+			path = FrameworkDetailView;
+			sourceTree = "<group>";
+		};
+		765A14452AB945FB0035DEF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				762FEAEE2AB66248004B1D64 /* Framework.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		765A14462AB946270035DEF1 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				765A14402AB93D230035DEF1 /* SafariView.swift */,
+			);
+			path = "UIKit Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

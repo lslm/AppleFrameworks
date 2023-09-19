@@ -26,7 +26,7 @@ struct FrameworkGridItem: View {
                 .fontWeight(.semibold)
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
-                .foregroundStyle(.primary)
+                .foregroundStyle(Color(.label))
         }
         .padding()
     }
